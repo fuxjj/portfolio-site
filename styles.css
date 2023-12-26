@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .custom-shape-divider-bottom-1703175294 {
     position: absolute;
     bottom: 0;
@@ -27,4 +31,40 @@
     height: 1px;
     background-color: #1D1D1D;
     border: none;
+}
+
+.custom-shape-divider-top-1703185780_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1703185780_2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1703185780_2 .shape-fill_2 {
+    fill: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    .Image {display:none;}
+
+}
+
+.cv {
+    margin: 0 auto;
 }

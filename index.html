@@ -12,18 +12,18 @@
         <nav>
             <ul class="flex p-6 bg-slate-500">
                 <li class="mr-6">
-                  <a class="text-white p-2 rounded hover:bg-slate-600" href="#">Active</a>
+                  <a class="text-white p-2 rounded hover:bg-slate-600" href="#home">Home</a>
                 </li>
                 <li class="mr-6">
-                  <a class="text-white p-2 rounded hover:bg-slate-600" href="#">Link</a>
+                  <a class="text-white p-2 rounded hover:bg-slate-600" href="#about">About</a>
                 </li>
                 <li class="mr-6">
-                  <a class="text-white p-2 rounded hover:bg-slate-600" href="#">Link</a>
+                  <a class="text-white p-2 rounded hover:bg-slate-600" href="#projects">Projects</a>
                 </li>
               </ul>
         </nav>
 <!--Welcome section-->
-        <section class="relative"> 
+        <section class="relative" id="home"> 
             <div class="bg-slate-700 text-white text-center min-h-screen">
                 <div class="pt-20"> <!--welcome text-->
                     <h1 class="font-mono font-bold text-3xl">Hi, I'm Junaid</h1>
@@ -45,17 +45,21 @@
         </section>
 
 <!--about section-->
-        <section> 
+        <section id="about"> 
             <div class="bg-white-950">
                 <div class="text-center p-6">
                     <h1 class="text-dark font-mono font-bold text-2xl pt-20">About me</h1>
-                    <p class="text-dark font-mono text-xl pt-20 px-96 mb-6">I'm a beginner web developer with a love for coding and cats. I have a passion for coding and expanding my knowledge.</p>
+                    <p class="text-dark font-mono text-xl pt-20 md:px-96 mb-6">I'm a beginner web developer with a love for coding and cats. I have a passion for coding and expanding my knowledge.</p>
+                    <div class="container">
+                       <embed class="cv self-center" src="img/CV.pdf" width="800" height="500">
+                    </div>
+                    
                 </div>
-                <hr class="line m-6">
+                <!-- <hr class="line m-6"> -->
                 <div class="text-center p-6">
                     <h1 class="text-dark font-mono font-bold text-2xl pt-10">Coding languages</h1>
                     <!-- <p class="text-dark font-mono text-xl pt-10">Javascript, HTML, CSS..</p> -->
-                    <ul>
+                    <ul class="pt-6">
                         <li class="text-dark font-mono text-l pt-6">HTML - Intermediate</li>
                         <li class="text-dark font-mono text-l pt-6">CSS - Intermediate</li>
                         <li class="text-dark font-mono text-l pt-6">Javascript - Beginner</li>
@@ -64,16 +68,74 @@
             </div>
         </section>
 
+        
 <!--projects section-->
-        <section>
+        <section class="relative" id="projects">
+            <div class="bg-slate-700 ">
+                <!--more waves-->       
+                <div class="custom-shape-divider-top-1703185780_2">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill_2"></path>
+                    </svg>
+                </div>
+                <div class="text-center p-6 pt-44">
+                    <h1 class="text-white font-mono font-bold text-3xl">My projects</h1>
+                    <p class="text-white font-mono text-xl pt-10">A couple of cards that will showcase my projects!</p>
+                </div>
 
+                <div class="grid-cols-3 grid row-span-1 place-content-center">
+                    <div class="border-solid shadow-lg bg-white rounded-lg md:w-96 place-self-center">
+                        <div>
+                            <img class="Image h-60 place-content-center rounded-lg" src="img/jsquiz.png" alt="A picture from my JS Quiz site">
+                        </div>
+                          
+                        <div class="text-center">
+                            <h4 class="font-mono text-xl md:text-2xl">JS General knowledge quiz</h4>
+                            <p class="font-mono mt-10 text-l md:text-1xl">The first website I created that incorporated JS, the quiz website has 5 questions and shows your score at the end. </p> 
+                            <button class="bg-emerald-500 p-3 mb-2 mt-2 rounded text-white"><a href="https://fuxjj.github.io/jsquiz/" target="_blank">Check it out!</a></button>
+                        </div>
+                    </div>
+
+                    <div class="border-solid shadow-lg bg-white rounded-lg md:w-96 place-self-center">
+                        <div>
+                            <img class="Image h-60 place-content-center rounded-lg" src="img/hobby.png" alt="A picture from my Hobby site">
+                        </div>
+                          
+                        <div class="text-center">
+                            <h4 class="font-mono text-xl md:text-2xl">Tailwind hobby site</h4>
+                            <p class="font-mono mt-10 text-l md:text-1xl">The first multiple page website I created, the hobby site has multiple pages which use free SVG's.  </p> 
+                            <button class="bg-emerald-500 p-3 mb-2 mt-2 rounded text-white"><a href="https://fuxjj.github.io/my-hobby-site/" target="_blank">Check it out!</a></button>
+                        </div>
+                    </div>
+
+                    <div class="border-solid shadow-lg bg-white rounded-lg md:w-96 place-self-center">
+                        <div>
+                            <img class="Image h-60 place-content-center rounded-lg" src="img/castle.png" alt="A picture from my OOP Castle site">
+                        </div>
+                          
+                        <div class="text-center">
+                            <h4 class="font-mono text-xl md:text-2xl">OOP Text Adventure game</h4>
+                            <p class="font-mono mt-10 text-l md:text-1xl">A website I created which uses OOP to create an adventure game for the user. Currently broken</p> 
+                            <button class="bg-emerald-500 p-3 mb-2 mt-2 rounded text-white"><a href="https://fuxjj.github.io/OOPs-I-made-a-text-based-game/" target="_blank">Check it out!</a></button>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+            </div>
         </section>
 
-<!--footer-->
-        <footer>
 
-        </footer>
     </main>
-    
+
+<!--footer-->
+<footer class="bg-slate-600 p-6 text-center">
+    <h4 class="text-white">Copyright &copy; Junaid Ahmed 2023</h4>
+    <h6 class="text-white">Contact me!</h6>
+    <ul class="text-white">
+        <li>Phone: +447458310508</li>
+        <li>Email: ja894483@gmail.com</li>
+    </ul>
+</footer>    
 </body>
 </html>
