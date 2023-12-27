@@ -68,3 +68,8 @@ html {
 .cv {
     margin: 0 auto;
 }
+
+.showBorder {
+    border: #1D1D1D;
+    border-style: dashed;
+}
