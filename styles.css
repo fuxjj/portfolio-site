@@ -1,6 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
+
+.border {
+    border-radius: 10px;
+    border-color: black;
+}
+
 
 .custom-shape-divider-bottom-1703175294 {
     position: absolute;
@@ -59,17 +69,129 @@ html {
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-
-    .Image {display:none;}
-
-}
 
 .cv {
     margin: 0 auto;
 }
 
-.showBorder {
-    border: #1D1D1D;
-    border-style: dashed;
+.accordionButton {
+    width: 800px;
+}
+
+.accordionText {
+    height: 100px;
+    width: 800px;
+    margin-left: 508px;
+}
+
+.slideshowBox {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slidesText {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slidesNumber {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.gitLink {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .Image {
+        height: 250px;
+        width: 200px;
+    }
+
+    .accordionButton {
+        width: 350px;
+    }
+
+    .accordionText {
+        margin-left: 1px;
+        height: 200px;
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .accordionButton {
+        width: 400px;
+    }
+
+    .accordionText {
+        height: 150px;
+        width: 400px;
+        margin-left: 180px;
+    }
 }
