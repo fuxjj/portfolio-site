@@ -24,14 +24,15 @@
         </nav>
 <!--Welcome section-->
         <section class="relative" id="home"> 
-            <div class="bg-slate-700 text-white text-center min-h-screen">
+            <div class="bg-slate-700 text-white text-center min-h-screen ">
                 <div class="pt-20"> <!--welcome text-->
-                    <h1 class="font-mono font-bold text-3xl">Hi, I'm Junaid</h1>
-                    <p class="font-mono font-bold text-2xl pt-6">Welcome to my portfolio site.</p>
+                    <h1 class="font-mono font-thin text-3xl">Hi, I'm Junaid</h1>
+                    <p class="font-mono font-thin text-2xl pt-6">Welcome to my portfolio site.</p>
                 </div>
-
-                <div > <!--image-->
-                    
+                <br>
+                <br>
+                <div class="container max-w-full" > <!--image-->
+                    <img class="rounded-md Image" src="img/image.png" alt="Me! (the developer)">
                 </div>
             </div>
 
@@ -49,22 +50,48 @@
             <div class="bg-white-950 align-items-center justify-center">
                 <div class="text-center p-6 align-items-center justify-center">
                     <h1 class="text-dark font-mono font-bold text-2xl pt-20">About me</h1>
-                    <p class="text-dark font-mono text-xl pt-20 md:px-96 mb-6">I'm a beginner web developer with a love for coding and cats. I have a passion for coding and expanding my knowledge.</p>
+                    <p class="text-dark font-mono text-xl pt-20 mb-6">I'm a beginner web developer with a love for coding and cats. I have a passion for coding and expanding my knowledge.</p>
                     <div class="container max-w-full">
                        <embed class="cv" src="img/CV.pdf" width="800" height="500">
                     </div>
                 </div>
-                <!-- <hr class="line m-6"> -->
-                <div class="text-center p-6">
-                    <h1 class="text-dark font-mono font-bold text-2xl pt-10">Coding languages</h1>
-                    <!-- <p class="text-dark font-mono text-xl pt-10">Javascript, HTML, CSS..</p> -->
-                    <ul class="pt-6">
-                        <li class="text-dark font-mono text-l pt-6">HTML - Intermediate</li>
-                        <li class="text-dark font-mono text-l pt-6">CSS - Intermediate</li>
-                        <li class="text-dark font-mono text-l pt-6">Javascript - Beginner</li>
-                        <li class="text-dark font-mono text-m pt-6">PHP - Low</li>
-                        <li class="text-dark font-mono text-m pt-6">SQL - Low</li>
-                    </ul>
+
+<!--Accordion-->
+                <h1 class="text-center text-dark font-mono font-bold text-2xl pt-10 ">Skills</h1>
+
+                <div class="text-center p-6">  
+
+                    <div class="align-items-center justify-center">
+                        <div>
+                            <button class="bg-gray-100 rounded-md border accordionButton" onclick="showLanguagesText()">Programming languages</button>
+                        </div>
+                        <div id="languagesText" class="hidden bg-gray-200 accordionText">
+                            <p>Programming languages i know and have experience using include HTML, CSS and JavaScript, alongside these I use/have used TailwindCSS, ReactJS and NextJS. I have a small amount of experience using AngularJS. I also have experience using the MERN stack.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <div>
+                            <button class="bg-gray-100 rounded-md border accordionButton" onclick="showEducationText()">Education</button>
+                        </div>
+                        <div id="otherText" class="hidden bg-gray-200 accordionText">
+                            <p>I am currently a student at the Manchester Metropolitan University studying a BSc(Hons)Software Engineering degree. Prior to this I studied a Digital T-Level at college.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <div>
+                            <button class="bg-gray-100 rounded-md border accordionButton" onclick="showExperienceText()">Experiences</button>
+                        </div>
+                        <div id="thirdText" class="hidden bg-gray-200 accordionText">
+                            <p>I have completed a skills Bootcamp with the Developer Academy in web development, which was very useful and taught me fundamentals of web development, such as programming languages and teamworking</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -81,47 +108,39 @@
                 </div>
                 <div class="text-center p-6 pt-44">
                     <h1 class="text-white font-mono font-bold text-3xl">My projects</h1>
-                    <p class="text-white font-mono text-xl pt-10">A couple of cards that will showcase my projects!</p>
+                    <p class="text-white font-mono text-xl pt-10">A carousel to showcase my projects!</p>
                 </div>
 
-                <div class="grid-cols-3 grid row-span-1 place-content-center">
-                    <div class="border-solid shadow-lg bg-white rounded-lg md:w-96 place-self-center">
-                        <div>
-                            <img class="Image h-60 place-content-center rounded-lg" src="img/jsquiz.png" alt="A picture from my JS Quiz site">
-                        </div>
-                          
-                        <div class="text-center">
-                            <h4 class="font-mono text-xl md:text-2xl">JS General knowledge quiz</h4>
-                            <p class="font-mono mt-10 text-l md:text-1xl">The first website I created that incorporated JS, the quiz website has 5 questions and shows your score at the end. </p> 
-                            <button class="bg-emerald-500 p-3 mb-2 mt-2 rounded text-white"><a href="https://fuxjj.github.io/jsquiz/" target="_blank">Check it out!</a></button>
-                        </div>
+                <div class="slideshowBox ">
+                    <div class="slides fade">
+                        <div class="slidesNumber">1 / 3</div>
+                        <img src="img/jsquiz.png" alt="Javascript quiz" style="width: 100%;">
+                        <div class="slidesText">Javascript quiz</div>
                     </div>
 
-                    <div class="border-solid shadow-lg bg-white rounded-lg md:w-96 place-self-center">
-                        <div>
-                            <img class="Image h-60 place-content-center rounded-lg" src="img/hobby.png" alt="A picture from my Hobby site">
-                        </div>
-                          
-                        <div class="text-center">
-                            <h4 class="font-mono text-xl md:text-2xl">Tailwind hobby site</h4>
-                            <p class="font-mono mt-10 text-l md:text-1xl">The first multiple page website I created, the hobby site has multiple pages which use free SVG's.  </p> 
-                            <button class="bg-emerald-500 p-3 mb-2 mt-2 rounded text-white"><a href="https://fuxjj.github.io/my-hobby-site/" target="_blank">Check it out!</a></button>
-                        </div>
+                    <div class="slides fade">
+                        <div class="slidesNumber">2 / 3</div>
+                        <img src="img/hobby.png" alt="Javascript quiz" style="width: 100%;">
+                        <div class="slidesText">Hobby site</div>
                     </div>
 
-                    <div class="border-solid shadow-lg bg-white rounded-lg md:w-96 place-self-center">
-                        <div>
-                            <img class="Image h-60 place-content-center rounded-lg" src="img/castle.png" alt="A picture from my OOP Castle site">
-                        </div>
-                          
-                        <div class="text-center">
-                            <h4 class="font-mono text-xl md:text-2xl">OOP Text Adventure game</h4>
-                            <p class="font-mono mt-10 text-l md:text-1xl">A website I created which uses OOP to create an adventure game for the user. Currently broken</p> 
-                            <button class="bg-emerald-500 p-3 mb-2 mt-2 rounded text-white"><a href="https://fuxjj.github.io/OOPs-I-made-a-text-based-game/" target="_blank">Check it out!</a></button>
-                        </div>
+                    <div class="slides fade">
+                        <div class="slidesNumber">3 / 3</div>
+                        <img src="img/castle.png" alt="Javascript quiz" style="width: 100%;">
+                        <div class="slidesText">Text based game</div>
                     </div>
 
-                    <br>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div class="text-center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <h3 class="text-white font-thin text-center p-3">Find all these projects on my <a href="https://github.com/fuxjj" target="_blank" class="gitLink">Github!</a></h3>
                 </div>
             </div>
         </section>
@@ -139,4 +158,6 @@
     </ul>
 </footer>    
 </body>
+
+<script src="index.js"></script>
 </html>
