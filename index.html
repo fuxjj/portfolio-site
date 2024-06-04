@@ -26,8 +26,8 @@
         <section class="relative" id="home"> 
             <div class="bg-slate-700 text-white text-center min-h-screen ">
                 <div class="pt-20"> <!--welcome text-->
-                    <h1 class="font-mono font-thin text-3xl">Hi, I'm Junaid</h1>
-                    <p class="font-mono font-thin text-2xl pt-6">Welcome to my portfolio site.</p>
+                    <h1 class="font-mono font-thin text-3xl welcomeHeader">Hi, I'm Junaid</h1>
+                    <p class="font-mono font-thin text-2xl pt-6 welcomeText">Welcome to my portfolio site.</p>
                 </div>
                 <br>
                 <br>
@@ -59,37 +59,25 @@
 <!--Accordion-->
                 <h1 class="text-center text-dark font-mono font-bold text-2xl pt-10 ">Skills</h1>
 
-                <div class="text-center p-6">  
+                <div class="text-center align-items-center justify-center pb-10">  
 
-                    <div class="align-items-center justify-center">
-                        <div>
-                            <button class="bg-gray-100 rounded-md border accordionButton" onclick="showLanguagesText()">Programming languages</button>
-                        </div>
-                        <div id="languagesText" class="hidden bg-gray-200 accordionText">
-                            <p>Programming languages i know and have experience using include HTML, CSS and JavaScript, alongside these I use/have used TailwindCSS, ReactJS and NextJS. I have a small amount of experience using AngularJS. I also have experience using the MERN stack.</p>
-                        </div>
+                    <div class="centerAccordion">
+                        <button class="bg-gray-100 rounded-md border accordionButton" onclick="showLanguagesText()">Programming languages</button>
+                        <p id="languagesText" class="hidden bg-gray-200 accordionText">Programming languages i know and have experience using include HTML, CSS and JavaScript, alongside these I use/have used TailwindCSS, ReactJS and NextJS. I have a small amount of experience using AngularJS. I also have experience using the MERN stack.</p>
                     </div>
 
                     <br>
 
-                    <div>
-                        <div>
-                            <button class="bg-gray-100 rounded-md border accordionButton" onclick="showEducationText()">Education</button>
-                        </div>
-                        <div id="otherText" class="hidden bg-gray-200 accordionText">
-                            <p>I am currently a student at the Manchester Metropolitan University studying a BSc(Hons)Software Engineering degree. Prior to this I studied a Digital T-Level at college.</p>
-                        </div>
+                    <div class="centerAccordion">
+                        <button class="bg-gray-100 rounded-md border accordionButton" onclick="showEducationText()">Education</button>
+                        <p id="otherText" class="hidden bg-gray-200 accordionText">I am currently a student at the Manchester Metropolitan University studying a BSc(Hons)Software Engineering degree. Prior to this I studied a Digital T-Level at college.</p>
                     </div>
 
                     <br>
 
-                    <div>
-                        <div>
+                    <div class="centerAccordion">
                             <button class="bg-gray-100 rounded-md border accordionButton" onclick="showExperienceText()">Experiences</button>
-                        </div>
-                        <div id="thirdText" class="hidden bg-gray-200 accordionText">
-                            <p>I have completed a skills Bootcamp with the Developer Academy in web development, which was very useful and taught me fundamentals of web development, such as programming languages and teamworking</p>
-                        </div>
+                            <p id="thirdText" class="hidden bg-gray-200 accordionText">I have completed a skills Bootcamp with the Developer Academy in web development, which was very useful and taught me fundamentals of web development, such as programming languages and teamworking</p>
                     </div>
 
                 </div>
