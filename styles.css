@@ -81,7 +81,6 @@ html {
 .accordionText {
     height: 100px;
     width: 800px;
-    margin-left: 508px;
 }
 
 .slideshowBox {
@@ -165,12 +164,26 @@ html {
     text-decoration: underline;
 }
 
+.centerAccordion {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
 
 @media screen and (max-width: 767px) {
+    .welcomeHeader {
+        font-size: x-large;
+    }
+
+    .welcomeText {
+        font-size: medium;
+    }
 
     .Image {
-        height: 250px;
-        width: 200px;
+        height: 175px;
+        width: 140px;
     }
 
     .accordionButton {
@@ -178,8 +191,7 @@ html {
     }
 
     .accordionText {
-        margin-left: 1px;
-        height: 200px;
+        height: 150px;
         width: 350px;
     }
 }
@@ -192,6 +204,5 @@ html {
     .accordionText {
         height: 150px;
         width: 400px;
-        margin-left: 180px;
     }
 }
