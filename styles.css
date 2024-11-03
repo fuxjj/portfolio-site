@@ -11,6 +11,10 @@ html {
     border-color: black;
 }
 
+.Image {
+    height: 475px;
+    width: 340px;
+}
 
 .custom-shape-divider-bottom-1703175294 {
     position: absolute;
@@ -182,8 +186,8 @@ html {
     }
 
     .Image {
-        height: 175px;
-        width: 140px;
+        height: 275px;
+        width: 200px;
     }
 
     .accordionButton {
